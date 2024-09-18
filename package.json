@@ -1,5 +1,5 @@
 {
-  "name": "fastcampus-nextbnb",
+  "name": "nextbnb",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,12 +8,21 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+  },
   "dependencies": {
+    "@prisma/client": "^5.6.0",
+    "classnames": "^2.5.1",
+    "dayjs": "^1.11.13",
     "next": "13.5.6",
     "react": "^18",
-    "react-dom": "^18"
+    "react-calendar": "^5.0.0",
+    "react-dom": "^18",
+    "react-icons": "^5.3.0"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -24,7 +33,9 @@
     "eslint-plugin-prettier": "^5.0.1",
     "postcss": "^8",
     "prettier": "3.1.0",
+    "prisma": "^5.6.0",
     "tailwindcss": "^3",
+    "ts-node": "^10.9.1",
     "typescript": "^5"
   }
 }
